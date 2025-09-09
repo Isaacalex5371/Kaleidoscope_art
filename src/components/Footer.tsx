@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Mail, Phone, Send } from 'lucide-react';
 import { motion } from 'motion/react';
-
+import { FaTiktok } from "react-icons/fa";
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -191,7 +191,7 @@ export function Footer() {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <Instagram className="w-4 h-4 text-cream/70 group-hover:text-burnt-orange transition-colors duration-300" />
+              <FaTiktok className="w-4 h-4 text-cream/70 group-hover:text-burnt-orange transition-colors duration-300" />
             </motion.a>
             <motion.a 
               href="https://www.facebook.com/profile.php?id=100089356375631" 

@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin,  Facebook, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import emailjs from "@emailjs/browser";
+import { FaTiktok } from 'react-icons/fa';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -25,17 +26,19 @@ export function Contact() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+ 
+
     emailjs
       .send(
-        "service_pdx9x7d",     
-        "template_4suwkft",    
+        "service_es78g0j",     
+        "template_qwicpfq",    
         {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "K_tcIzsgNtzOW66ei"      
+        "XQJa4xYFzlSFLP4xS"      
       )
       .then(
         () => {
@@ -147,66 +150,73 @@ export function Contact() {
                 Get in Touch
               </motion.h3>
               
-              <div className="space-y-6">
-                {[
-                  { 
-                    icon: Mail, 
-                    color: 'secondary',
-                    title: 'Email',
-                    value: 'hello@kaleidoscopeart.com',
-                    subtitle: 'Response within 24 hours',
-                    delay: 0.7
-                  },
-                  { 
-                    icon: Phone, 
-                    color: 'accent',
-                    title: 'Phone',
-                    value: '+215 -2235 7628',
-                    subtitle: 'Mon-Fri, 9AM-6PM PST',
-                    delay: 0.9
-                  },
-                  { 
-                    icon: MapPin, 
-                    color: 'gold',
-                    title: 'Studio',
-                    value: 'Downtown Arts District',
-                    subtitle: 'addis abeba ,akaki kality ',
-                    delay: 1.1
-                  }
-                ].map((contact) => (
-                  <motion.div 
-                    key={contact.title}
-                    className="flex items-start space-x-4 group"
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: contact.delay }}
-                    viewport={{ once: true }}
-                  >
-                    <motion.div 
-                      className={`w-12 h-12 bg-${contact.color}/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-${contact.color}/20 transition-all duration-300`}
-                      whileHover={{ 
-                        scale: 1.1,
-                        boxShadow: contact.color === 'secondary' ? "0 0 20px rgba(212, 165, 116, 0.3)" :
-                                   contact.color === 'accent' ? "0 0 20px rgba(107, 124, 90, 0.3)" :
-                                   "0 0 20px rgba(201, 169, 97, 0.3)"
-                      }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <contact.icon className={`w-5 h-5 text-${contact.color} group-hover:scale-110 transition-transform duration-300`} />
-                    </motion.div>
-                    <div>
-                      <motion.h4 
-                        className="font-medium text-foreground mb-1 group-hover:text-secondary transition-colors duration-300"
-                        whileHover={{ x: 3 }}
-                      >
-                        {contact.title}
-                      </motion.h4>
-                      <p className="text-muted-foreground">{contact.value}</p>
-                      <p className="text-sm text-muted-foreground">{contact.subtitle}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+             <div className="space-y-6">
+  {[
+    { 
+      icon: Mail, 
+      color: 'secondary',
+      title: 'Email',
+      value: 'bemnet933@gmail.com',
+      subtitle: 'Response within 24 hours',
+      href: 'mailto:bemnet933@gmail.com',
+      delay: 0.7
+    },
+    { 
+      icon: Phone, 
+      color: 'accent',
+      title: 'Phone',
+      value: '+251-2235-7628',
+      subtitle: 'Mon-Fri, 9AM-6PM PST',
+      href: 'tel:+25122357628',
+      delay: 0.9
+    },
+    { 
+      icon: MapPin, 
+      color: 'gold',
+      title: 'Studio',
+      value: 'Downtown Arts District',
+      subtitle: 'Addis Abeba, Akaki Kality',
+      href: 'https://maps.app.goo.gl/Rx1BbLtjR3ep467w6',
+      delay: 1.1
+    }
+  ].map((contact) => (
+    <motion.a 
+      key={contact.title}
+      href={contact.href}
+      target={contact.title === 'Studio' ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+      className="flex items-start space-x-4 group"
+      initial={{ opacity: 0, x: -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: contact.delay }}
+      viewport={{ once: true }}
+    >
+      <motion.div 
+        className={`w-12 h-12 bg-${contact.color}/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-${contact.color}/20 transition-all duration-300`}
+        whileHover={{ 
+          scale: 1.1,
+          boxShadow: contact.color === 'secondary' ? "0 0 20px rgba(212, 165, 116, 0.3)" :
+                     contact.color === 'accent' ? "0 0 20px rgba(107, 124, 90, 0.3)" :
+                     "0 0 20px rgba(201, 169, 97, 0.3)"
+        }}
+        transition={{ duration: 0.2 }}
+      >
+        <contact.icon className={`w-5 h-5 text-${contact.color} group-hover:scale-110 transition-transform duration-300`} />
+      </motion.div>
+      <div>
+        <motion.h4 
+          className="font-medium text-foreground mb-1 group-hover:text-secondary transition-colors duration-300"
+          whileHover={{ x: 3 }}
+        >
+          {contact.title}
+        </motion.h4>
+        <p className="text-muted-foreground">{contact.value}</p>
+        <p className="text-sm text-muted-foreground">{contact.subtitle}</p>
+      </div>
+    </motion.a>
+  ))}
+</div>
+
             </div>
 
           
@@ -219,9 +229,9 @@ export function Contact() {
               <h4 className="font-medium text-foreground mb-4">Follow the Journey</h4>
               <div className="flex space-x-4">
                 {[
-                  { icon: Instagram, color: 'secondary', link: 'https://instagram.com/ysakalex7' },
+                  { icon: FaTiktok, color: 'secondary', link: 'https://www.tiktok.com/@kaleababgm28?_t=ZM-8zafcgyeyzG&_r=1' },
                   { icon: Facebook, color: 'accent', link: 'https://www.facebook.com/profile.php?id=100089356375631' },
-                  { icon: Linkedin, color: 'gold', link: 'https://t.me/Beebisho' }
+                  { icon: Send, color: 'gold', link: 'https://t.me/Kaleabab21' }
                 ].map((social, index) => (
                   <motion.a 
                     key={index}
