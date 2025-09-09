@@ -170,7 +170,7 @@ export function Contact() {
                     color: 'gold',
                     title: 'Studio',
                     value: 'Downtown Arts District',
-                    subtitle: 'Los Angeles, California',
+                    subtitle: 'addis abeba ,akaki kality ',
                     delay: 1.1
                   }
                 ].map((contact) => (
