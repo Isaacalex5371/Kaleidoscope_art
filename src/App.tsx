@@ -8,9 +8,12 @@ import { Commission } from './components/Commission';
 import { ClientsTestimonials } from './components/ClientsTestimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { TermsOfService } from './components/TermsOfService';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState<'home' | 'terms' | 'privacy'>('home');
 
   // Initialize theme on app load
   useEffect(() => {
@@ -26,6 +29,22 @@ export default function App() {
     return <LoadingScreen onComplete={() => setIsLoading(false)} />;
   }
 
+  // Handle navigation to legal pages
+  const handleNavigateToTerms = () => setCurrentPage('terms');
+  const handleNavigateToPrivacy = () => setCurrentPage('privacy');
+  const handleBackToPortfolio = () => setCurrentPage('home');
+
+  // Render Terms of Service page
+  if (currentPage === 'terms') {
+    return <TermsOfService onBack={handleBackToPortfolio} />;
+  }
+
+  // Render Privacy Policy page
+  if (currentPage === 'privacy') {
+    return <PrivacyPolicy onBack={handleBackToPortfolio} />;
+  }
+
+  // Render main portfolio website
   return (
     <div className="min-h-screen bg-background text-foreground transition-all duration-500 ease-in-out">
       {/* Import Google Fonts for artistic typography */}
@@ -111,7 +130,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      <Footer onNavigateToTerms={handleNavigateToTerms} onNavigateToPrivacy={handleNavigateToPrivacy} />
     </div>
   );
 }

@@ -1,7 +1,12 @@
-import { Instagram, Facebook, Mail, Phone, Send } from 'lucide-react';
+import {  Facebook, Mail, Phone, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import { FaTiktok } from "react-icons/fa";
-export function Footer() {
+interface FooterProps {
+  onNavigateToTerms?: () => void;
+  onNavigateToPrivacy?: () => void;
+}
+
+export function Footer({ onNavigateToTerms, onNavigateToPrivacy }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -162,28 +167,30 @@ export function Footer() {
           
        
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mb-6 md:mb-0">
-            <motion.div 
+            <motion.a 
               className="flex items-center space-x-2 text-cream/70"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
+              href='mailto:bemnet933@gmail.com'
             >
               <Mail className="w-4 h-4" />
-              <span className="text-sm">hello@kaleidoscopeart.com</span>
-            </motion.div>
-            <motion.div 
+              <span className="text-sm">bemnet933@gmail.com</span>
+            </motion.a>
+            <motion.a 
               className="flex items-center space-x-2 text-cream/70"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
+              href='tel:+25122357628'
             >
               <Phone className="w-4 h-4" />
               <span className="text-sm">+215 -2235 7628</span>
-            </motion.div>
+            </motion.a>
           </div>
 
         
           <div className="flex space-x-4">
             <motion.a 
-              href="https://instagram.com/ysakalex7" 
+              href="https://www.tiktok.com/@kaleababgm28?_t=ZM-8zafcgyeyzG&_r=1" 
               className="w-10 h-10 bg-cream/10 hover:bg-burnt-orange/30 border border-cream/20 hover:border-burnt-orange/50 rounded-full flex items-center justify-center transition-all duration-300 group backdrop-blur-sm"
               whileHover={{ 
                 scale: 1.1, 
@@ -194,7 +201,7 @@ export function Footer() {
               <FaTiktok className="w-4 h-4 text-cream/70 group-hover:text-burnt-orange transition-colors duration-300" />
             </motion.a>
             <motion.a 
-              href="https://www.facebook.com/profile.php?id=100089356375631" 
+              href="https://www.facebook.com/kaleab.gibremichale" 
               className="w-10 h-10 bg-cream/10 hover:bg-earthy-green/30 border border-cream/20 hover:border-earthy-green/50 rounded-full flex items-center justify-center transition-all duration-300 group backdrop-blur-sm"
               whileHover={{ 
                 scale: 1.1, 
@@ -205,7 +212,7 @@ export function Footer() {
               <Facebook className="w-4 h-4 text-cream/70 group-hover:text-earthy-green transition-colors duration-300" />
             </motion.a>
             <motion.a 
-  href="https://t.me/Beebisho" 
+  href="https://t.me/Kaleabab21" 
   className="w-10 h-10 bg-cream/10 hover:bg-gold/30 border border-cream/20 hover:border-gold/50 rounded-full flex items-center justify-center transition-all duration-300 group backdrop-blur-sm"
   whileHover={{ 
     scale: 1.1, 
@@ -228,15 +235,15 @@ export function Footer() {
         >
           <p className="text-cream/60 text-sm">
             © {currentYear} Kaleidoscope Art Studio. All rights reserved. | 
-            <a href="#" className="hover:text-gold transition-colors duration-300 ml-1">
+            <a href="#" className="hover:text-gold transition-colors duration-300 ml-1" onClick={onNavigateToPrivacy}>
               Privacy Policy
             </a> | 
-            <a href="#" className="hover:text-gold transition-colors duration-300 ml-1">
+            <a href="#" className="hover:text-gold transition-colors duration-300 ml-1" onClick={onNavigateToTerms}>
               Terms of Service
             </a>
           </p>
           <p className="text-cream/40 text-xs mt-2">
-            Crafted with passion in Los Angeles, California
+            Crafted with passion in Akaki Kality, Addis Abeba
           </p>
         </motion.div>
       </div>

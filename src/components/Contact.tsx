@@ -166,7 +166,7 @@ export function Contact() {
       color: 'accent',
       title: 'Phone',
       value: '+251-2235-7628',
-      subtitle: 'Mon-Fri, 9AM-6PM PST',
+      subtitle: 'Mon-sun, 9AM-6PM PST',
       href: 'tel:+25122357628',
       delay: 0.9
     },
@@ -174,7 +174,7 @@ export function Contact() {
       icon: MapPin, 
       color: 'gold',
       title: 'Studio',
-      value: 'Downtown Arts District',
+      value: 'Selamsef Arts District',
       subtitle: 'Addis Abeba, Akaki Kality',
       href: 'https://maps.app.goo.gl/Rx1BbLtjR3ep467w6',
       delay: 1.1
