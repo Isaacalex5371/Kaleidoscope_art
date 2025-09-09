@@ -15,14 +15,14 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-section-light transition-all duration-500">
-     
+    <div className="min-h-screen bg-background transition-all duration-500">
+      {/* Animated Header */}
       <div className={`bg-section-dark transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
         <div className="container mx-auto px-6 py-12">
           <Button
             onClick={onBack}
             variant="ghost"
-            className="mb-8 text-deep-charcoal hover:text-burnt-orange transition-colors duration-300 group"
+            className="mb-8 text-foreground hover:text-burnt-orange transition-colors duration-300 group"
           >
             <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
             Back to Portfolio
@@ -36,7 +36,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
             </div>
             
-            <h1 className="font-serif text-4xl md:text-5xl text-deep-charcoal mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
               Privacy Policy
             </h1>
             
@@ -53,35 +53,35 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
         </div>
       </div>
 
-      
+      {/* Content Sections */}
       <div className="container mx-auto px-6 py-16 max-w-4xl">
         
+        {/* Section 1: Information We Collect */}
         <div className={`mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Database className="h-8 w-8 text-burnt-orange mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Information We Collect</h2>
+              <h2 className="font-serif text-2xl text-foreground">Information We Collect</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
-                <strong>Kaleidoscope Arts</strong> collects information necessary to provide professional 
+                <strong>Kaleidoscope Murals</strong> collects information necessary to provide professional 
                 mural artistry services to commercial venues. We are committed to protecting your privacy 
                 and using your information responsibly.
               </p>
               
               <div className="mt-6">
-                 <h4 className="text-deep-charcoal mb-3">Business Contact Information:</h4>
+                <h4 className="text-foreground mb-3">Business Contact Information:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Business name, contact person, and title</li>
                   <li>Business address and venue location details</li>
-                  <li>Phone numbers (business: +215-XXX-XXX-XXX) and email addresses</li>
+                  <li>Phone numbers (business: +215-223-57628) and email addresses</li>
                   <li>Project specifications and artistic requirements</li>
-                
                 </ul>
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Project-Related Information:</h4>
+                <h4 className="text-foreground mb-3">Project-Related Information:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Venue photographs and measurements for project planning</li>
                   <li>Design preferences, brand guidelines, and aesthetic requirements</li>
@@ -91,7 +91,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Website Analytics:</h4>
+                <h4 className="text-foreground mb-3">Website Analytics:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Basic website usage statistics for improving user experience</li>
                   <li>Portfolio viewing patterns to enhance showcase presentation</li>
@@ -101,21 +101,19 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             </div>
           </div>
         </div>
-
-        <div className={`mb-16 transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+         <div className={`mb-16 transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Eye className="h-8 w-8 text-earthy-green mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">How We Use Your Information</h2>
+              <h2 className="font-serif text-2xl text-foreground">How We Use Your Information</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
                 Your information is used exclusively for providing professional mural artistry services 
                 and maintaining our business relationship.
               </p>
-              
-              <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Primary Uses:</h4>
+                <div className="mt-6">
+                <h4 className="text-foreground mb-3">Primary Uses:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Project Management:</strong> Creating custom designs, coordinating installations, and managing timelines</li>
                   <li><strong>Communication:</strong> Project updates, scheduling, and professional correspondence</li>
@@ -125,7 +123,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Business Operations:</h4>
+                <h4 className="text-foreground mb-3">Business Operations:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Scheduling consultations and site visits for coffee houses, restaurants, hotels, and schools</li>
                   <li>Procurement of materials and coordination with installation teams</li>
@@ -148,7 +146,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Lock className="h-8 w-8 text-gold mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Information Sharing & Protection</h2>
+              <h2 className="font-serif text-2xl text-foreground">Information Sharing & Protection</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
@@ -157,7 +155,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </p>
               
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Authorized Sharing Includes:</h4>
+                <h4 className="text-foreground mb-3">Authorized Sharing Includes:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Trusted Contractors:</strong> Installation teams and material suppliers bound by confidentiality agreements</li>
                   <li><strong>Professional Services:</strong> Insurance providers, legal counsel, and accounting services as needed</li>
@@ -169,7 +167,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
              
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Retention Policy:</h4>
+                <h4 className="text-foreground mb-3">Retention Policy:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Active project information retained for project duration plus warranty period</li>
                   <li>Portfolio photographs retained with permission for business development</li>
@@ -186,7 +184,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Phone className="h-8 w-8 text-burnt-orange mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Your Rights & Choices</h2>
+              <h2 className="font-serif text-2xl text-foreground">Your Rights & Choices</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
@@ -194,7 +192,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </p>
               
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Your Rights Include:</h4>
+                <h4 className="text-foreground mb-3">Your Rights Include:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Access:</strong> Request a copy of the personal information we have about you</li>
                   <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
@@ -205,7 +203,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Portfolio & Marketing Choices:</h4>
+                <h4 className="text-foreground mb-3">Portfolio & Marketing Choices:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Opt out of having your completed project featured in our portfolio</li>
                   <li>Request removal of project photos from marketing materials</li>
@@ -226,10 +224,10 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
 
         <div className={`mb-16 transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
-            <h2 className="font-serif text-2xl text-deep-charcoal mb-6">Policy Updates & Contact Information</h2>
+            <h2 className="font-serif text-2xl text-foreground mb-6">Policy Updates & Contact Information</h2>
             <div className="space-y-4 text-foreground">
               <div>
-                <h4 className="text-deep-charcoal mb-3">Policy Updates:</h4>
+                <h4 className="text-foreground mb-3">Policy Updates:</h4>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>We may update this privacy policy to reflect changes in our practices or legal requirements</li>
                   <li>Significant changes will be communicated directly to active clients</li>
@@ -239,7 +237,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Data Controller Information:</h4>
+                <h4 className="text-foreground mb-3">Data Controller Information:</h4>
                 <div className="bg-section-dark-card p-4 rounded-lg">
                   <p><strong>Business:</strong> Kaleidoscope Murals</p>
                   <p><strong>Services:</strong> Professional mural artistry for commercial venues</p>
@@ -249,7 +247,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </div>
 
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Questions or Concerns:</h4>
+                <h4 className="text-foreground mb-3">Questions or Concerns:</h4>
                 <p>
                   If you have questions about this privacy policy, how we handle your information, 
                   or wish to exercise any of your rights, please contact us directly. We are committed 
@@ -262,13 +260,13 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
 
         <div className={`text-center transition-all duration-1000 delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
-            <h3 className="font-serif text-xl text-deep-charcoal mb-4">Privacy Questions?</h3>
+            <h3 className="font-serif text-xl text-foreground mb-4">Privacy Questions?</h3>
             <p className="text-muted-foreground mb-4">
               Contact us to discuss your privacy concerns or data handling questions.
             </p>
             <p className="text-lg">
               <strong className="text-earthy-green">Phone:</strong> 
-             <a href='tel:+25122357628'> <span className="ml-2 text-deep-charcoal">+215-223-57628</span></a>
+             <a href='tel:+25122357628'> <span className="ml-2 text-foreground">+215-223-57628</span></a>
             </p>
           </div>
         </div>

@@ -22,7 +22,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           <Button
             onClick={onBack}
             variant="ghost"
-            className="mb-8 text-deep-charcoal hover:text-burnt-orange transition-colors duration-300 group"
+            className="mb-8 text-foreground hover:text-burnt-orange transition-colors duration-300 group"
           >
             <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
             Back to Portfolio
@@ -36,7 +36,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
               </div>
             </div>
             
-            <h1 className="font-serif text-4xl md:text-5xl text-deep-charcoal mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
               Terms of Service
             </h1>
             
@@ -57,7 +57,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Palette className="h-8 w-8 text-burnt-orange mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Service Agreement</h2>
+              <h2 className="font-serif text-2xl text-foreground">Service Agreement</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
@@ -66,7 +66,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
               </p>
               <p>
                 By engaging our services, you agree to these terms which govern our artistic collaboration and 
-                business relationship. For inquiries, contact us at <a href='tel:+25122357628'><strong>+215-223-57628</strong>.</a> 
+                business relationship. For inquiries, contact us at <a href='tel:+25122357628'><strong>+215-223-57628</strong></a> .
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>All artwork is custom-created based on client specifications and venue requirements</li>
@@ -82,7 +82,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Shield className="h-8 w-8 text-earthy-green mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Payment Terms & Pricing</h2>
+              <h2 className="font-serif text-2xl text-foreground">Payment Terms & Pricing</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
@@ -107,7 +107,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
               <Users className="h-8 w-8 text-gold mr-4" />
-              <h2 className="font-serif text-2xl text-deep-charcoal">Intellectual Property & Usage Rights</h2>
+              <h2 className="font-serif text-2xl text-foreground">Intellectual Property & Usage Rights</h2>
             </div>
             <div className="space-y-4 text-foreground">
               <p>
@@ -127,7 +127,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
 
         <div className={`mb-16 transition-all duration-1000 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
-            <h2 className="font-serif text-2xl text-deep-charcoal mb-6">Project Scope & Cancellation Policy</h2>
+            <h2 className="font-serif text-2xl text-foreground mb-6">Project Scope & Cancellation Policy</h2>
             <div className="space-y-4 text-foreground">
               <p>
                 <strong>Project Scope:</strong> Each project includes design consultation, material sourcing, 
@@ -153,7 +153,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
 
         <div className={`mb-16 transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
-            <h2 className="font-serif text-2xl text-deep-charcoal mb-6">Warranties & Liability</h2>
+            <h2 className="font-serif text-2xl text-foreground mb-6">Warranties & Liability</h2>
             <div className="space-y-4 text-foreground">
               <p>
                 <strong>Artwork Warranty:</strong> We guarantee the quality and durability of our work using 
@@ -180,13 +180,13 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
         
         <div className={`text-center transition-all duration-1000 delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
-            <h3 className="font-serif text-xl text-deep-charcoal mb-4">Questions About These Terms?</h3>
+            <h3 className="font-serif text-xl text-foreground mb-4">Questions About These Terms?</h3>
             <p className="text-muted-foreground mb-4">
               Contact us to discuss your mural project and clarify any terms or conditions.
             </p>
             <p className="text-lg">
               <strong className="text-burnt-orange">Phone:</strong> 
-            <a>  <span className="ml-2 text-deep-charcoal">+215-223-57628</span></a>
+            <a>  <span className="ml-2 text-foreground">+215-223-57628</span></a>
             </p>
           </div>
         </div>
