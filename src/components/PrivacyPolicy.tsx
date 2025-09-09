@@ -70,12 +70,13 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               </p>
               
               <div className="mt-6">
-                <h4 className="text-deep-charcoal mb-3">Business Contact Information:</h4>
+                 <h4 className="text-deep-charcoal mb-3">Business Contact Information:</h4>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Kaleidoscope, Kaleab G/Mikael, and Illustrator</li>
-                  <li>Akaki kality, Addis Abeba</li>
-                  <li>Phone numbers (business:<a href='tel:+25122357628'> +215-223-57628</a>) and <a href='mailto:bemnet933@gmail.com'>bemnet933@gmail.com</a></li>
-                 
+                  <li>Business name, contact person, and title</li>
+                  <li>Business address and venue location details</li>
+                  <li>Phone numbers (business: +215-XXX-XXX-XXX) and email addresses</li>
+                  <li>Project specifications and artistic requirements</li>
+                
                 </ul>
               </div>
 

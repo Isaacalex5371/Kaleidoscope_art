@@ -66,7 +66,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
               </p>
               <p>
                 By engaging our services, you agree to these terms which govern our artistic collaboration and 
-                business relationship. For inquiries, contact us at <strong>+215-223-57628</strong>.
+                business relationship. For inquiries, contact us at <a href='tel:+25122357628'><strong>+215-223-57628</strong>.</a> 
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>All artwork is custom-created based on client specifications and venue requirements</li>
@@ -78,7 +78,6 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           </div>
         </div>
 
-        {/* Section 2: Payment & Pricing */}
         <div className={`mb-16 transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
@@ -94,7 +93,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
                 <li><strong>Deposit:</strong> 50% deposit required upon contract signing to secure project timeline</li>
                 <li><strong>Progress Payment:</strong> 25% due upon design approval and material procurement</li>
                 <li><strong>Final Payment:</strong> 25% due upon project completion and client approval</li>
-                <li><strong>Payment Methods:</strong> Check, bank transfer, or approved electronic payments</li>
+                <li><strong>Payment Methods:</strong> Check, bank transfer</li>
                 <li><strong>Late Fees:</strong> 1.5% monthly interest on overdue balances after 30 days</li>
               </ul>
               <p className="text-sm text-muted-foreground mt-4">
@@ -104,7 +103,6 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           </div>
         </div>
 
-        {/* Section 3: Intellectual Property */}
         <div className={`mb-16 transition-all duration-1000 delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <div className="flex items-center mb-6">
@@ -127,7 +125,6 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           </div>
         </div>
 
-        {/* Section 4: Project Scope & Cancellation */}
         <div className={`mb-16 transition-all duration-1000 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <h2 className="font-serif text-2xl text-deep-charcoal mb-6">Project Scope & Cancellation Policy</h2>
@@ -154,7 +151,6 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           </div>
         </div>
 
-        {/* Section 5: Warranties & Liability */}
         <div className={`mb-16 transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-light-card rounded-lg p-8 shadow-lg texture-overlay">
             <h2 className="font-serif text-2xl text-deep-charcoal mb-6">Warranties & Liability</h2>
@@ -181,7 +177,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
           </div>
         </div>
 
-        {/* Contact Information */}
+        
         <div className={`text-center transition-all duration-1000 delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-section-dark-card rounded-lg p-8 shadow-lg texture-overlay">
             <h3 className="font-serif text-xl text-deep-charcoal mb-4">Questions About These Terms?</h3>
@@ -190,12 +186,11 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
             </p>
             <p className="text-lg">
               <strong className="text-burnt-orange">Phone:</strong> 
-              <span className="ml-2 text-deep-charcoal">+215-223-57628</span>
+            <a>  <span className="ml-2 text-deep-charcoal">+215-223-57628</span></a>
             </p>
           </div>
         </div>
 
-        {/* Back to Portfolio Button */}
         <div className="text-center mt-12">
           <Button
             onClick={onBack}
