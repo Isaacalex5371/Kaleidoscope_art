@@ -48,11 +48,12 @@ export function About() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1529943684416-9d29047b809e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpc3QlMjBwb3J0cmFpdCUyMHBhaW50ZXIlMjBzdHVkaW98ZW58MXx8fHwxNzU2OTQxMjE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Kaleidoscope artist portrait"
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                />
+               <ImageWithFallback
+  src="images/wall/wall_1.jpg"
+  alt="Kaleidoscope artist portrait"
+  className="w-full max-w-[400px] aspect-[9/16] object-contain transition-transform duration-700 hover:scale-105"
+/>
+
               </motion.div>
               
              

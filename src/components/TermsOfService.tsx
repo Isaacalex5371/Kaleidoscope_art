@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ArrowLeft, Palette, Users, Shield, FileText } from 'lucide-react';
 import { Button } from './ui/button';
 
-interface TermsOfServiceProps {
+interface TermsOfServiceProps { 
   onBack: () => void;
 }
 
@@ -142,7 +142,7 @@ export function TermsOfService({ onBack }: TermsOfServiceProps) {
               
               <p className="mt-6"><strong>Cancellation Policy:</strong></p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Cancellation within 48 hours of signing: Full refund minus $500 consultation fee</li>
+                <li>Cancellation within 48 hours of signing: Full refund minus 1000 ETB consultation fee</li>
                 <li>Cancellation after design approval: 50% of total project cost</li>
                 <li>Cancellation during installation: 90% of total project cost</li>
                 <li>Force majeure events will be handled on case-by-case basis</li>

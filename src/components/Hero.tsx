@@ -105,7 +105,7 @@ export function Hero() {
           </motion.div>
           
           <motion.p 
-            className="text-xl md:text-2xl text-foreground/90 font-light tracking-wide italic drop-shadow-md"
+            className="text-xl md:text-2xl text-white/90 font-bold tracking-wide italic drop-shadow-md"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -184,9 +184,9 @@ export function Hero() {
             });
           }}
         >
-          <span className="text-sm tracking-wide">Explore</span>
+          <span className="text-sm tracking-wide font-bold">Explore</span>
           <motion.div 
-            className="w-px h-8 bg-foreground/30"
+            className="w-px h-8 bg-foreground/30 font-bold"
             animate={{ scaleY: [1, 1.5, 1] }}
             transition={{ 
               duration: 1.5, 
