@@ -353,7 +353,7 @@ export function Commission() {
                     <SelectValue placeholder="Select budget range" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="under-5k">Under $5,000</SelectItem>
+                    <SelectItem value="under-5k">Under 5,000 ETB</SelectItem>
                     <SelectItem value="5k-15k">5ooo ETB-15,000 ETB</SelectItem>
                     <SelectItem value="15k-30k">15,000 etb - 30,000 ETB</SelectItem>
                     <SelectItem value="30k-50k">30,000 ETB - 50,000 ETB</SelectItem>
