@@ -28,8 +28,8 @@ export function Commission() {
     setSubmitStatus('idle');
 
     emailjs.send(
-      "service_pdx9x7d",
-      "template_4suwkft",
+      "service_qp4mboa",
+      "template_zt15unb",
       {
         name: formData.name,
         email: formData.email,
@@ -37,7 +37,7 @@ export function Commission() {
         budget: formData.budget,
         description: formData.description
       },
-      "K_tcIzsgNtzOW66ei"
+      "xZzWmc8PSBTR06hCE"
     ).then(
       (result) => {
         console.log("Email sent successfully!", result.text);

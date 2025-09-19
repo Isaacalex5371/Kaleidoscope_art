@@ -5,18 +5,18 @@ import { motion } from 'motion/react';
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Chen",
+    name: "tesfaye ansa ",
     role: "Owner",
-    company: "The Roasted Bean Café",
+    company: "tina coffee",
     type: "Coffee House",
     quote: "Kaleidoscope transformed our café into an artistic haven. The warm earth tones and flowing wall designs create the perfect atmosphere for our customers to relax and connect. Sales increased 30% since the installation!",
     accent: "burnt-orange"
   },
   {
     id: 2,
-    name: "Marcus Rodriguez",
+    name: "joo",
     role: "General Manager",
-    company: "Vista Hotel & Spa",
+    company: "kua",
     type: "Hotel",
     quote: "The lobby wall art and canvas pieces have become conversation starters for every guest. The sophisticated blend of colors perfectly matches our brand identity while creating an unforgettable first impression.",
     accent: "earthy-green"
@@ -32,7 +32,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "David Park",
+    name: "hana primary school",
     role: "Principal",
     company: "Innovation Academy",
     type: "School",
@@ -60,8 +60,8 @@ const testimonials = [
 ];
 
 const clients = [
-  "The Roasted Bean Café", "Vista Hotel & Spa", "Harvest Table Restaurant", 
-  "Innovation Academy", "Artisan Coffee Co.", "Grand Plaza Hotel",
+  "kua ", "hana primary school ", "tina coffee ", 
+  "sululta primary school ", "Artisan Coffee Co.", "Grand Plaza Hotel",
   "Metropolitan Hotel", "Greenway Restaurant Group", "Riverside School District",
   "Downtown Coffee House", "Boutique Hotel Collection", "Urban Eatery"
 ];

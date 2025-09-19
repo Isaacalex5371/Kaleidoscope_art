@@ -171,10 +171,10 @@ export function Footer({ onNavigateToTerms, onNavigateToPrivacy }: FooterProps) 
               className="flex items-center space-x-2 text-cream/70"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
-              href='mailto:bemnet933@gmail.com'
+              href='mailto:kaleidoscope5371@gmail.com'
             >
               <Mail className="w-4 h-4" />
-              <span className="text-sm">bemnet933@gmail.com</span>
+              <span className="text-sm">kaleidoscope5371@gmail.com</span>
             </motion.a>
             <motion.a 
               className="flex items-center space-x-2 text-cream/70"

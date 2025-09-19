@@ -30,15 +30,15 @@ export function Contact() {
 
     emailjs
       .send(
-        "service_es78g0j",     
-        "template_qwicpfq",    
+        "service_qp4mboa",     
+        "template_7wapwtb",    
         {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "XQJa4xYFzlSFLP4xS"      
+        "xZzWmc8PSBTR06hCE"      
       )
       .then(
         () => {
@@ -156,9 +156,9 @@ export function Contact() {
       icon: Mail, 
       color: 'secondary',
       title: 'Email',
-      value: 'bemnet933@gmail.com',
+      value: 'kaleidoscope5371@gmail.com',
       subtitle: 'Response within 24 hours',
-      href: 'mailto:bemnet933@gmail.com',
+      href: 'mailto:kaleidoscope5371@gmail.com',
       delay: 0.7
     },
     { 
